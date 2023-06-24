@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- Header -->
@@ -42,8 +43,13 @@
             <li><a href="" class="header-link-item link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="btn btn-menu-open" data-menu-open>
+          <svg class="icon-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="header-address">
-          <ul class="list header-list">
+          <ul class="list header-list-address">
             <li>
               <a
                 href="mailto:info@devstudio.com"
@@ -59,13 +65,102 @@
           </ul>
         </address>
       </div>
+      <div class="menu-mobile is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-menu-btn" data-menu-close>
+            <svg class="icon-close-modal" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <ul class="menu-mobile-list list">
+            <li class="menu-list-item">
+              <a class="menu-text-link link" href="">Studio</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-text-link link" href="">Portfolio</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-text-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <address class="menu-address">
+            <ul class="list menu-list-address">
+              <li class="menu-list-item">
+                <a href="tel:+110001111111" class="menu-phone-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="menu-email-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="menu-list-media list">
+            <li class="menu-media-item">
+              <a
+                href=""
+                class="menu-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="media-icon" width="24" height="24">
+                  <use href="./images/media-icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-media-item">
+              <a
+                href=""
+                class="menu-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="media-icon" width="24" height="24">
+                  <use href="./images/media-icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-media-item">
+              <a
+                href=""
+                class="menu-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="media-icon" width="24" height="24">
+                  <use href="./images/media-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-media-item">
+              <a
+                href=""
+                class="menu-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="media-icon" width="24" height="24">
+                  <use href="./images/media-icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Hero -->
       <section class="hero-section">
         <div class="container hero-container">
-          <h1 class="hero-text">Effective Solutions for Your Business</h1>
+          <h1 class="hero-text">Effective Solutions For Your Business</h1>
           <button type="button" class="btn-hero" data-modal-open>
             Order Service
           </button>
@@ -139,6 +234,7 @@
                 src="./images/wawd1.jpg"
                 alt="Computer screen showing the main website page"
                 width="360"
+                class="pic-1"
               />
             </li>
             <li class="do-list-item">
@@ -146,6 +242,7 @@
                 src="./images/wawd2.jpg"
                 alt="Four phone screenshots showing the use of tools"
                 width="360"
+                class="pic-2"
               />
             </li>
             <li class="do-list-item">
@@ -153,6 +250,7 @@
                 src="./images/wawd3.jpg"
                 alt="A man holding a phone in his hand with the website article open"
                 width="360"
+                class="pic-3"
               />
             </li>
           </ul>
@@ -166,12 +264,13 @@
           <ul class="list team-list">
             <li class="list-item team-list-item">
               <img
+                srcset="./images/ot-mg.jpg 1x, ./images/ot-mg@2x.jpg 2x"
                 src="./images/ot-mg.jpg"
                 alt="A portrait photo of Mark Guerrero"
                 width="264"
               />
               <div class="worker">
-                <h3 class="text-title">Mark Guerrero</h3>
+                <h3 class="text-title-team">Mark Guerrero</h3>
                 <p class="text-description-portfolio">Product Designer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
@@ -233,12 +332,13 @@
             </li>
             <li class="list-item team-list-item">
               <img
+                srcset="./images/ot-tf.jpg 1x, ./images/ot-tf@2x.jpg 2x"
                 src="./images/ot-tf.jpg"
                 alt="A portrait photo of Tom Ford"
                 width="264"
               />
               <div class="worker">
-                <h3 class="text-title">Tom Ford</h3>
+                <h3 class="text-title-team">Tom Ford</h3>
                 <p class="text-description-portfolio">Frontend Developer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
@@ -300,12 +400,13 @@
             </li>
             <li class="list-item team-list-item">
               <img
+                srcset="./images/ot-cg.jpg 1x, ./images/ot-cg@2x.jpg 2x"
                 src="./images/ot-cg.jpg"
                 alt="A portrait photo of Camila Garcia"
                 width="264"
               />
               <div class="worker">
-                <h3 class="text-title">Camila Garcia</h3>
+                <h3 class="text-title-team">Camila Garcia</h3>
                 <p class="text-description-portfolio">Marketing</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
@@ -367,12 +468,13 @@
             </li>
             <li class="list-item team-list-item">
               <img
+                srcset="./images/ot-dw.jpg 1x, ./images/ot-dw@2x.jpg 2x"
                 src="./images/ot-dw.jpg"
                 alt="A portrait photo of Daniel Wilson"
                 width="264"
               />
               <div class="worker">
-                <h3 class="text-title">Daniel Wilson</h3>
+                <h3 class="text-title-team">Daniel Wilson</h3>
                 <p class="text-description-portfolio">UI Designer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
@@ -690,14 +792,12 @@
                 >Privacy Policy</a
               ></label
             >
-            
           </div>
           <button type="submit" class="btn-form">Send</button>
         </form>
-
-        <!-- <div class="modal-content"></div> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
