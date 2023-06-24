@@ -2,10 +2,10 @@
 
 /* main page */
 
-@media screen and (min-width: 428px) {
+/* @media screen and (min-width: 428px) { */
     .container {
         max-width: 396px;
-        padding: 0;
+        padding: 0 15px 0 15px;
     }
 
     .header-list {
@@ -305,7 +305,7 @@
     .modal-form-text {
         padding-top: 48px;
     }
-}
+
 
 
 /* TABLET */
@@ -853,7 +853,6 @@
 
     .form-footer {
         display: block;
-        max-width: 453px;
         margin-left: 80px;
     }
 
@@ -913,6 +912,4 @@
     .modal-form-text {
         margin-top: 0;
     }
-
-
-}
+} 
