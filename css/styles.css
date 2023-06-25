@@ -20,7 +20,6 @@ p {
 }
 
 ul {
-    margin: 0;
     padding: 0;
 }
 
@@ -119,15 +118,13 @@ img {
     margin-left: auto;
 }
 
-
 .header-link-item {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-title);
-    padding: 24px 0;
-    display: flex;
+    display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -144,7 +141,7 @@ img {
     height: 4px;
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -100%;
 }
 
 .portfolio-header {
@@ -159,7 +156,7 @@ img {
     height: 4px;
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -100%;
 }
 
 .header-link-item:hover,
@@ -584,10 +581,6 @@ img {
     gap: 16px;
 }
 
-.form-footer {
-    margin-top: 72px;
-}
-
 .text-media-footer {
     font-size: 16px;
     font-weight: 500;
@@ -641,6 +634,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .close-modal-btn:hover,
@@ -667,7 +661,6 @@ img {
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding-left: 16px;
     width: 264px;
     height: 40px;
     font-size: 12px;
