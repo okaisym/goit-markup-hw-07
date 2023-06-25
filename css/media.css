@@ -4,7 +4,7 @@
 
 /* @media screen and (min-width: 428px) { */
 .container {
-    max-width: 396px;
+    max-width: 428px;
     padding: 0 16px 0 16px;
 }
 
@@ -138,7 +138,6 @@
 
 .form-footer {
     text-align: center;
-    width: 100%;
 }
 
 .form-subscribe {
@@ -181,6 +180,9 @@
 }
 
 .close-menu-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +199,7 @@
 
 .modal {
     padding: 72px 16px 16px 16px;
-    max-width: 392px;
+    width: 100%;
     margin-top: 48px;
 }
 
@@ -225,6 +227,11 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
+    padding-bottom: 24px;
+}
+
+.menu-mobile-list {
+    margin-top: 56px;
 }
 
 .menu-text-link {
@@ -536,6 +543,7 @@
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding: 0 15px;
     }
 
     .header-container {
@@ -547,6 +555,11 @@
     .header-navigation {
         display: flex;
         align-items: center;
+    }
+
+    .header-address-link {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .header-list-address {
@@ -564,6 +577,10 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk.jpg);
         max-height: 600px;
         max-width: 1440px;
+    }
+
+    .btn-hero {
+        margin-top: 48px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -790,8 +807,7 @@
     }
 
     .form-footer {
-        max-width: 264px;
-        margin-left: 24px;
+        margin-left: 80px;
     }
 
     .footer-section>.container {
@@ -808,6 +824,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--function-color);
+    }
+
+    .logo-text-footer {
+        margin-bottom: 0;
     }
 
     .web-logo-footer {
@@ -838,6 +858,10 @@
         background-color: #31d0aa;
     }
 
+    .footer-media-container {
+        margin-bottom: 0;
+    }
+
     .footer-media-item {
         width: 40px;
         height: 40px;
@@ -845,7 +869,6 @@
 
     .form-subscribe {
         flex-direction: row;
-      
     }
 
     .btn-subdcribe {
@@ -872,7 +895,8 @@
     .flex-container {
         flex-wrap: nowrap;
         display: flex;
-      align-items: baseline;
+        align-items: baseline;
+        column-gap: 0;
     }
 
     .text-media-footer {
@@ -886,10 +910,11 @@
     }
 
     .email-input {
-        border: 1px solid #ffffff;
+        border: 1px solid #FFFFFF;
         opacity: 0.30000001192092896;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-       width: 264px;
+        width: 264px;
+        color: #FFFFFF;
     }
 
     .email-input::placeholder {

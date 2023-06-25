@@ -21,6 +21,7 @@ p {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 .link {
@@ -607,7 +608,7 @@ img {
 
 .modal {
     position: absolute;
-    width: 408px;
+   width: 408px;
     min-height: 584px;
     left: 50%;
     top: 50%;
