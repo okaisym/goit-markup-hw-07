@@ -138,6 +138,7 @@
 
 .form-footer {
     text-align: center;
+    width: 100%;
 }
 
 .form-subscribe {
@@ -808,6 +809,7 @@
 
     .form-footer {
         margin-left: 80px;
+        width: auto;
     }
 
     .footer-section>.container {
